@@ -787,6 +787,17 @@ select.form-control {
   background: var(--color-secondary-hover);
 }
 
+/* Dark mode: make currency toggle white for visibility */
+[data-color-scheme="dark"] #currencyToggle {
+  background: var(--color-white);
+  border-color: var(--color-white);
+  color: var(--color-slate-900);
+}
+
+[data-color-scheme="dark"] #currencyToggle:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
 /* Hero Section */
 .hero {
   background: var(--color-bg-1);

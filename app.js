@@ -176,16 +176,22 @@ function initializeTheme() {
 
 // Currency management
 function initializeCurrency() {
-  const label = document.querySelector('.currency-label');
-  if (label) label.textContent = currentCurrency;
+  updateCurrencyToggleUI();
 }
 
 function toggleCurrency() {
   currentCurrency = currentCurrency === 'USD' ? 'INR' : 'USD';
-  const label = document.querySelector('.currency-label');
-  if (label) label.textContent = currentCurrency;
+  updateCurrencyToggleUI();
   updateMetrics();
   updateAllCharts();
+}
+
+function updateCurrencyToggleUI() {
+  const label = document.querySelector('.currency-label');
+  const button = document.getElementById('currencyToggle');
+  const nextCurrency = currentCurrency === 'USD' ? 'INR' : 'USD';
+  if (label) label.textContent = nextCurrency;
+  if (button) button.setAttribute('aria-label', `Switch to ${nextCurrency}`);
 }
 
 function toggleTheme() {
