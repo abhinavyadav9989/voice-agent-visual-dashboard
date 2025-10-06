@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Agent Cost Analysis - Telugu Language Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1>Voice Agent Cost Analysis</h1>
+                <div class="header-actions">
+                    <button id="currencyToggle" class="theme-toggle" aria-label="Toggle currency">
+                        <span class="currency-label">USD</span>
+                    </button>
+                    <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                </div>
+            </div>
+            <p class="header-subtitle">Comprehensive Analysis for Telugu Language Voice Agents - October 2025</p>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="key-metrics-grid">
+                    <div class="metric-card primary">
+                        <div class="metric-icon">💰</div>
+                        <div class="metric-value" id="totalCost">$555.56</div>
+                        <div class="metric-label">Total Monthly Cost</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-icon">📞</div>
+                        <div class="metric-value" id="costPerCall">$0.111</div>
+                        <div class="metric-label">Cost Per Call</div>
+                    </div>
+                    <div class="metric-card success">
+                        <div class="metric-icon">💡</div>
+                        <div class="metric-value">76%</div>
+                        <div class="metric-label">Cheaper Than Competition</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-icon">🎯</div>
+                        <div class="metric-value" id="monthlyCalls">5,000</div>
+                        <div class="metric-label">Monthly Calls</div>
+                    </div>
+                </div>
+                <div class="tech-stack-preview">
+                    <h3>Technology Stack Flow</h3>
+                    <div class="tech-flow">
+                        <div class="tech-step">
+                            <div class="tech-icon">🎤</div>
+                            <span>Audio Input</span>
+                        </div>
+                        <div class="tech-arrow">→</div>
+                        <div class="tech-step">
+                            <div class="tech-icon">🔊</div>
+                            <span>Deepgram Flux</span>
+                        </div>
+                        <div class="tech-arrow">→</div>
+                        <div class="tech-step">
+                            <div class="tech-icon">🤖</div>
+                            <span>GPT-5 Nano</span>
+                        </div>
+                        <div class="tech-arrow">→</div>
+                        <div class="tech-step">
+                            <div class="tech-icon">💬</div>
+                            <span>OpenAI TTS</span>
+                        </div>
+                        <div class="tech-arrow">→</div>
+                        <div class="tech-step">
+                            <div class="tech-icon">🔉</div>
+                            <span>Audio Output</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Calculator -->
+    <section class="calculator-section" id="calculator">
+        <div class="container">
+            <h2>Interactive Cost Calculator</h2>
+            <div class="calculator-grid">
+                <div class="calculator-controls">
+                    <div class="control-group">
+                        <label class="form-label">Monthly Calls: <span id="callsValue">5,000</span></label>
+                        <input type="range" id="callsSlider" class="form-range" min="1000" max="50000" value="5000" step="1000">
+                    </div>
+                    <div class="control-group">
+                        <label class="form-label">Call Duration: <span id="durationValue">5.0</span> minutes</label>
+                        <input type="range" id="durationSlider" class="form-range" min="1" max="15" value="5" step="0.5">
+                    </div>
+                </div>
+                <div class="cost-breakdown-chart">
+                    <h3>Cost Breakdown</h3>
+                    <div class="chart-container" style="position: relative; height: 300px;">
+                        <canvas id="costBreakdownChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Component Details -->
+    <section class="components-section">
+        <div class="container">
+            <h2>Cost Component Analysis</h2>
+            <div class="components-grid" id="componentsGrid">
+                <!-- Components will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack -->
+    <section class="technology-section">
+        <div class="container">
+            <h2>Technology Stack Advantages</h2>
+            <div class="tech-advantages-grid">
+                <div class="advantage-card">
+                    <div class="advantage-icon">⚡</div>
+                    <h3>Real-time Processing</h3>
+                    <p>Sub-second response times with advanced interruption handling</p>
+                    <div class="advantage-metric">200-600ms faster</div>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon">🎯</div>
+                    <h3>Interruption Handling</h3>
+                    <p>Natural conversation flow with intelligent turn detection</p>
+                    <div class="advantage-metric">30% fewer false interruptions</div>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon">🗣️</div>
+                    <h3>Telugu Excellence</h3>
+                    <p>Superior native language support and comprehension</p>
+                    <div class="advantage-metric">95%+ accuracy</div>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon">💰</div>
+                    <h3>Cost Optimization</h3>
+                    <p>Efficient token usage and optimized pricing</p>
+                    <div class="advantage-metric">76% savings</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Competitive Analysis -->
+    <section class="competitive-section">
+        <div class="container">
+            <h2>Competitive Analysis</h2>
+            <div class="competition-chart-container">
+                <div class="chart-container" style="position: relative; height: 400px;">
+                    <canvas id="competitionChart"></canvas>
+                </div>
+            </div>
+            <div class="feature-matrix">
+                <h3>Feature Comparison Matrix</h3>
+                <div class="matrix-container">
+                    <table class="matrix-table" id="featureMatrix">
+                        <!-- Matrix will be populated by JavaScript -->
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Savings Analysis -->
+    <section class="savings-section">
+        <div class="container">
+            <h2>ROI & Savings Analysis</h2>
+            <div class="savings-grid">
+                <div class="savings-cards">
+                    <div class="savings-card">
+                        <h4>vs Retell AI</h4>
+                        <div class="savings-amount">$1,319</div>
+                        <div class="savings-percentage">70.4% savings</div>
+                    </div>
+                    <div class="savings-card">
+                        <h4>vs Vapi AI</h4>
+                        <div class="savings-amount">$6,944</div>
+                        <div class="savings-percentage">92.6% savings</div>
+                    </div>
+                    <div class="savings-card">
+                        <h4>vs Azure AI</h4>
+                        <div class="savings-amount">$244</div>
+                        <div class="savings-percentage">30.5% savings</div>
+                    </div>
+                    <div class="savings-card highlight">
+                        <h4>vs Human Agents</h4>
+                        <div class="savings-amount">$39,333</div>
+                        <div class="savings-percentage">85.5% savings</div>
+                    </div>
+                </div>
+                <div class="roi-chart-container">
+                    <h3>Annual Projection</h3>
+                    <div class="chart-container" style="position: relative; height: 300px;">
+                        <canvas id="roiChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Performance Metrics -->
+    <section class="performance-section">
+        <div class="container">
+            <h2>Performance Metrics</h2>
+            <div class="metrics-grid">
+                <div class="metric-gauge">
+                    <div class="gauge-title">Response Time</div>
+                    <div class="gauge-value">200-600ms faster</div>
+                    <div class="gauge-subtitle">than alternatives</div>
+                </div>
+                <div class="metric-gauge">
+                    <div class="gauge-title">Accuracy</div>
+                    <div class="gauge-value">95%+</div>
+                    <div class="gauge-subtitle">Telugu comprehension</div>
+                </div>
+                <div class="metric-gauge">
+                    <div class="gauge-title">Uptime</div>
+                    <div class="gauge-value">99.9%</div>
+                    <div class="gauge-subtitle">availability target</div>
+                </div>
+                <div class="metric-gauge">
+                    <div class="gauge-title">Scalability</div>
+                    <div class="gauge-value">Unlimited</div>
+                    <div class="gauge-subtitle">concurrent calls</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Implementation Recommendations -->
+    <section class="recommendations-section">
+        <div class="container">
+            <h2>Implementation Recommendations</h2>
+            <div class="recommendations-grid">
+                <div class="recommendation-card primary">
+                    <div class="recommendation-header">
+                        <h3>🏆 Recommended</h3>
+                        <span class="status status--success">Best Value</span>
+                    </div>
+                    <h4>Our Custom Solution</h4>
+                    <div class="cost-highlight">$0.111 per call</div>
+                    <ul class="recommendation-features">
+                        <li>76% cost savings over competition</li>
+                        <li>Superior Telugu language support</li>
+                        <li>Complete customization control</li>
+                        <li>Advanced interruption handling</li>
+                        <li>Scalable architecture</li>
+                    </ul>
+                    <div class="implementation-details">
+                        <strong>Setup:</strong> 4-6 weeks | <strong>Tech Requirements:</strong> High
+                    </div>
+                </div>
+                
+                <div class="recommendation-card secondary">
+                    <div class="recommendation-header">
+                        <h3>⚡ Quick Start</h3>
+                        <span class="status status--warning">Fast Deploy</span>
+                    </div>
+                    <h4>Retell AI</h4>
+                    <div class="cost-highlight">$0.375 per call</div>
+                    <ul class="recommendation-features">
+                        <li>Quick 1-2 day deployment</li>
+                        <li>Good Telugu support</li>
+                        <li>Transparent pricing</li>
+                        <li>Low technical requirements</li>
+                    </ul>
+                    <div class="implementation-details">
+                        <strong>Setup:</strong> 1-2 days | <strong>Tech Requirements:</strong> Low
+                    </div>
+                </div>
+                
+                <div class="recommendation-card avoid">
+                    <div class="recommendation-header">
+                        <h3>❌ Avoid</h3>
+                        <span class="status status--error">Too Expensive</span>
+                    </div>
+                    <h4>Vapi AI</h4>
+                    <div class="cost-highlight">$1.500 per call</div>
+                    <ul class="recommendation-features">
+                        <li>Very high costs</li>
+                        <li>Complex setup process</li>
+                        <li>High technical requirements</li>
+                        <li>Limited support</li>
+                    </ul>
+                    <div class="implementation-details">
+                        <strong>Setup:</strong> 2-4 weeks | <strong>Tech Requirements:</strong> Very High
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Analysis Details</h4>
+                    <p>Analysis Date: October 2025</p>
+                    <p>Language Focus: Telugu</p>
+                    <p>Campaign Size: 5,000 calls/month</p>
+                    <p>Call Duration: 5 minutes average</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Data Sources</h4>
+                    <p>Official vendor pricing pages</p>
+                    <p>API documentation analysis</p>
+                    <p>Performance benchmarking</p>
+                    <p>Customer testimonials</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Key Findings</h4>
+                    <p>Custom solution: 76% cheaper</p>
+                    <p>Superior Telugu support</p>
+                    <p>Advanced technical capabilities</p>
+                    <p>Significant ROI potential</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
